@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: hsl(180, 2%, 80%);
+        }
+        .container{
+            margin-top: 30px;
+            margin: auto;
+            background-color: hsl(0, 25%, 98%);
+            height: 300px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 10px 10px 15px 10px grey;
+            padding: 10px;
+            border-radius: 15px;
+          
+        }
+        .number{
+            width: 200px;
+            height: 25px;
+            color: aquamarine;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+   <form class="container">
+    <h1>TEMPERATURE CONVERSION APP</h1>
+    <input type="number" class="number" placeholder="enter to convert"><br>
+
+    <input type="radio" name="temp" class="radio1"> <label>celcious</label><br>
+
+    <input type="radio" name="temp" class="radio2"><label>faranheight</label><br>
+    <br>
+    <button class="btn" >submit</button>
+    <h2 class="result">0.0</h2>
+   
+    
+   </form>
+   <script src="temperature.js"></script>
+</body>
+</html>

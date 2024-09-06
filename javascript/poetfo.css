@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 100px;
+    
+
+}
+.container .contact{
+ margin-top: 30px;
+    max-width: 400px;
+    height: 450pxpx;
+    color: gold;
+    display: block;
+    box-shadow: 10px 10px 15px grey;
+    padding: 10px;
+    transition: 0.60s ease-in;
+}
+.line{
+    margin-top: 4px;
+    height: 35px;
+    background-color: black;
+}
+.social .socials{
+    width: 30px;
+    height: 30px;
+}
+li{
+    list-style: none;
+}
+.my-skills{
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(99, 99, 104);
+    position: relative;
+    max-width: 150px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 10px 10px 15px  gray;
+    transition: 0.50s ease-in;
+}
+.social{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.social li{
+    list-style: none ;
+    padding:15px
+}
+.contact h2{
+    text-align: center;
+
+}
+.image {
+    box-shadow: 10px 10px 15px grey;
+     background-color: yellow;
+
+    height: 300px;
+    max-width: 400px;
+}
+
+.image .img1{
+    height: 700x;
+    width: 300px;
+    box-shadow: 10px 10px 15px grey;
+}
+.textcontent{
+   box-shadow: 10px 10px 15px grey;
+    max-width: 400px;
+    height: 500px;
+   margin-top:30px;
+   color:gold;
+   display: block;
+   padding: 10px;
+  
+   transition: 0.60s ease-in;
+   
+}
+.textcontent:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 10px gold;
+    
+}
+.contact:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 10px gold;
+    
+}
+.my-skills:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: translateY(20px);
+    
+    
+}
+
+
+.pin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+   border: 1px solid grey;
+   border-radius: 30px;
+    
+}
+.pin p{
+    background-color: red;
+   
+  
+    height: 15px;
+    width: 15px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5%;
+    border-radius: 20px;
+}.pin2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    
+    background-color: white;
+   border: 1px solid grey;
+  
+   margin-left: 700px;
+}
+.pin2 p{
+    background-color: rgb(0, 255, 34);
+   
+  
+    height: 15px;
+    width: 15px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 5%;
+    border-radius: 20px;
+}

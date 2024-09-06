@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+    
+   
+}
+.title{
+   
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+   position: fixed;
+   margin-top: -150px;
+   box-shadow:   5px grey;
+   z-index: 3;
+   color: gold;
+
+}
+
+.title .menu ul {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    justify-content: space-between;
+    
+
+}
+.title .menu ul li{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+    
+
+.hi h2{
+transition: 0.50s ease-in;
+}
+.textcontent{
+    display: flex;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    max-width: 450px;
+}
+
+
+
+
+li a{
+  font-size: 15px;
+    transition: background 0.9s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+li a:hover{ 
+    text-decoration: none;
+    
+    text-transform: capitalize;
+    transform: translateX(9px);
+
+
+
+}
+.project{
+    margin-top: 100px;
+    max-width: 100%;
+
+   margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: purple;
+    color: gold;
+   
+    
+}
+
+.project1{
+    text-align: center;
+    max-width: 500px;
+    margin: 20px;
+    box-shadow: 10px 10px 15px 10px grey;
+    border-radius: 20px 0px 20px 0px;
+    transition: 0.50s ease-in;
+
+   
+    
+
+}
+.project1:hover{
+    transform:translateY(9px);
+    box-shadow: 5px 5px 15px  rgb(145, 80, 80);
+}
+.my{
+    text-align: center;
+    margin-left: 300px;
+    
+
+}
+/*sections*/
+
+.container{
+   
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 100%;
+    margin-top: 150px;
+    
+  
+    
+
+}
+.pro{
+    margin-top: 100px;
+  
+    text-align: center;
+}
+.title h1{
+    margin-left: 20px;
+    
+}
+.emails{
+    display: flex;
+}
+.acc{
+    margin-left: 10px ;
+    margin-top: -2px;
+}
+.email{
+    margin: -17px;
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+    padding: 9px;
+}
+.container .contact{
+ margin-top: 30px;
+    max-width: 400px;
+    height: 450pxpx;
+    color: gold;
+    display: block;
+    box-shadow: 10px 10px 15px grey;
+    padding: 10px;
+    transition: 0.60s ease-in;
+    background-color: rgb(48, 135,135);
+}
+.line{
+    margin-top: 4px;
+    height: 30px;
+    background-color: black;
+}
+
+.social .socials{
+    width: 30px;
+    height: 30px;
+}
+li{
+    list-style: none;
+}
+.my-skills{
+    padding: 10px;
+    margin: auto;
+    background-color: rgb(99, 99, 104);
+    position: relative;
+    max-width: 150px;
+    border-radius: 10px 0px 10px 0px;
+    box-shadow: 10px 10px 15px  gray;
+    transition: 0.50s ease-in;
+}
+.social{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.social li{
+    list-style: none ;
+    padding:15px
+}
+.contact h2{
+    text-align: center;
+
+}
+.image {
+    box-shadow: 10px 10px 15px grey;
+     
+
+    height: 500px;
+    max-width: 400px;
+    margin-left: 125x;
+}
+
+.image .img1{
+    
+    height: 700x;
+    width: 300px;
+    box-shadow: 10px 10px 15px grey;
+  
+}
+
+
+.textcontent{
+   box-shadow: -10px 10px 15px grey;
+    max-width: 400px;
+    height: 500px;
+   margin-top:30px;
+   color:gold;
+   display: block;
+   padding: 10px;
+   background-color: rgb(48, 135,135);
+   transition: 0.60s ease-in;
+   text-align: center;
+   font-size: 1em;
+   text-wrap: wrap;
+   
+   
+}
+.textcontent:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 10px gold;
+    
+}
+.contact:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 10px gold;
+    
+}
+.my-skills:hover{
+    box-shadow: 5px 5px 10px grey;
+    transform: translateY(20px);
+    
+    
+}
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: blueviolet;
+    margin-top: 20vh;
+}
+
+
+
+ 
+

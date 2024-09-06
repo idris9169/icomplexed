@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .count{
+        display: block;
+        text-align: center;
+        font-size: 100px;
+        background-color: aqua;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .btncontainer{
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        background-color: aqua;
+        padding: 20px;
+        transition: background 0.9s,ease;
+    }
+    .btn:hover{
+background-color: blue;
+color: rgb(250, 250, 250);
+
+    }
+    #team1{
+display: block;
+text-align: center;
+font-size: 100px;
+background-color: brown;
+    }
+    .goals{
+        display: block;
+        text-align: center;
+        font-size: 50px;
+        background-color: brown;
+    }
+</style>
+<body>
+    <h1 id="myH1"></h1>
+    <p id="idr"></p>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p>accepting input</p>
+    
+    <label for="username"> username</label>
+    <input type="text" class="username" id="username">
+    <button id="submit">submit</button>
+    <!-- circumference of acircle -->
+    <label for="radius"> Radius</label>
+    <input type="text" class="radius" id="radius">
+    <button id="mysubmit">submit</button>
+    <br>
+    <br>
+    <!-- increase and decrease count -->
+
+     <label for="" id="team1">team name</label>
+    <label for="count" class="count" id="counts">0</label>
+    <div class="btncontainer">
+        <button id="decrease" class="btn">decrease</button>
+        <button id="reset"class="btn">reset</button>
+        <button id="increase"class="btn">increase</button>
+    </div>
+    <label class=" goals"> NO. of Goals</label>
+    <label  class="count" id="countLabe">0</label>
+    <div class="btncontainer">
+        <button id="decreasebt" class="btn">decrease</button>
+        <button id="resetbt"class="btn">reset</button>
+        <button id="increasebt"class="btn">increase</button>
+        
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script src="index1.js"></script>
+</body>
+</html>

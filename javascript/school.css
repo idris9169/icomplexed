@@ -1,0 +1,300 @@
+/* Reset some default styling */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height of the logo */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        width: 200px;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+/* Existing styles here */
+
+.title{
+    font-size: 25px;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url('https://cdn.pixabay.com/photo/2017/08/11/01/37/back-to-school-2629361_1280.jpg');
+    position: relative;
+    overflow: hidden; /* Hide overflow to keep images contained */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding for spacing */
+    height: 90vh;
+}
+
+.hero-slides {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    animation: slide 10s infinite; /* Animation duration and infinite loop */
+}
+
+.slide {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure slides cover viewport height */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure content is above slides */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.btn-secondary {
+    background-color: #28a745; /* Secondary button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34; /* Darker shade for hover effect */
+}
+/* Search bar styling */
+.search-bar {
+    margin-top: 10px; /* Space above search bar */
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    gap: 10px; /* Space between input and button */
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+
+/* Animation for sliding images */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+   
+
+/* Responsive hero section */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Smaller font size for smaller screens */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .btn-primary, .btn-secondary {
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+
+    .btn-primary:last-child, .btn-secondary:last-child {
+        margin-bottom: 0; /* Remove bottom margin from the last button */
+    }
+}
+/* From Uiverse.io by ShadowShahriar */ 
+.btn-primary, .btn-secondary  {
+    --border-radius: 15px;
+    --border-width: 4px;
+    appearance: none;
+    position: relative;
+    padding: 1em 2em;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+   }
+   
+   .btn-secondary, .btn-primary::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+           #488cfb,
+           #29dbbc,
+           #ddf505,
+           #ff9f0e,
+           #e440bb,
+           #655adc,
+           #488cfb
+       );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+   }
+   
+   .btn-secondary, .btn-primary::after {
+    animation-play-state: running;
+   }
+   
+   @keyframes rotate-hue {
+    to {
+     filter: hue-rotate(1turn);
+    }
+   }
+   
+   .btn-secondary,.btn-primary
+   .btn-secondary,.btn-primary::after {
+    box-sizing: border-box;
+   }
+   
+   .btn-primary,.btn-secondary:active {
+    --border-width: 5px;
+   }
